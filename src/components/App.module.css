@@ -1,0 +1,31 @@
+.title_phonebook
+{
+    color: rgb(55, 55, 199);
+}
+.title_contact
+{
+    color: rgb(32, 163, 32);
+}
+.title_error
+{
+    color: rgb(236, 54, 54);
+}
+.title_phonebook, .title_contact, .title_error
+{
+    margin: 40px auto;
+    text-align: center;
+}
+@media screen and (max-width: 720px)
+{
+    .title_phonebook, .title_contact, .title_error
+    {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 620px)
+{
+    .title_phonebook, .title_contact, .title_error
+    {
+        font-size: 25px;
+    }
+}
