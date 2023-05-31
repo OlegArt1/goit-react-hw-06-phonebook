@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { getTasks } from "redux/selectors";
 import { ContactItem } from "./ContactItem";
-import { LOCALE_STORAGE, name_text } from "components/App";
+import { name_text } from "components/App";
 import PropTypes from "prop-types";
 import Css from "./ContactList.module.css";
 import AppCss from "../App.module.css";
@@ -16,8 +16,6 @@ export const ContactList = ({ usersContact }) =>
 
     usersContact = getVisibleContacts(contacts);
 
-    localStorage.setItem(LOCALE_STORAGE, JSON.stringify(usersContact));
-    
     return (
         <div className={Css.contact}>
             <ul className={Css.contact__list}>
